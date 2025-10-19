@@ -1,9 +1,17 @@
 const { createClient } = require('@supabase/supabase-js');
+require('dotenv').config();
 
-const supabase = createClient(
-  'https://wfnqzrjxnuqhoxjwjela.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndmbnF6cmp4bnVxaG94andqZWxhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDI3MzY4OCwiZXhwIjoyMDc1ODQ5Njg4fQ.SvF03HTVDIDXSoX_KWbJlngiQ0nef9a90-i-oewrdb0'
-);
+// ✅ Load from environment variables
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_KEY;
+
+// Validate required env vars
+if (!SUPABASE_URL || !SUPABASE_SERVICE_KEY) {
+  console.error('❌ Missing Supabase credentials in environment variables');
+  throw new Error('SUPABASE_URL and SUPABASE_SERVICE_KEY are required');
+}
+
+const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY);
 
 console.log('✅ Supabase connected');
 
