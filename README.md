@@ -1,16 +1,34 @@
-# React + Vite
+# 🍽️ CHEF AI - Food Waste Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI-powered platform to reduce food waste and optimize food management.
 
-Currently, two official plugins are available:
+## 🎯 What is CHEF AI?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CHEF AI helps you reduce food waste using artificial intelligence. It tracks your food inventory, predicts waste patterns, and suggests recipes based on ingredients you have.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🤖 **AI Chatbot** - Get instant answers about food waste reduction
+- 📊 **Dashboard** - Track your food waste statistics and trends
+- 🥗 **Recipe Generator** - Get recipe suggestions from your available ingredients
+- 📱 **Inventory Management** - Track food items and expiration dates
+- 📸 **Waste Scanner** - Scan food waste with your camera
+- 🎁 **Donation Management** - Connect with food banks and charities
+- 📈 **Analytics** - Visualize your waste reduction progress
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, Vite, Tailwind CSS
+- **Backend:** Node.js, Express
+- **Database:** Supabase (PostgreSQL)
+- **AI:** Google Gemini 2.5 Flash
+- **Hosting:** Vercel
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+
