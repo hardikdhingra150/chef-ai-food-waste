@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import { Mic, Loader2, Volume2 } from 'lucide-react';
 
+// ✅ Use environment variable
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 export default function VoiceAssistant() {
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState('');
@@ -32,7 +35,8 @@ export default function VoiceAssistant() {
   const handleCommand = async (text) => {
     setIsProcessing(true);
     try {
-      const res = await fetch('http://localhost:5000/api/chat/message', {
+      // ✅ Use API_URL variable instead of hardcoded localhost
+      const res = await fetch(`${API_URL}/api/chat/message`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text })
