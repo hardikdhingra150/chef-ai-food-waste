@@ -21,7 +21,7 @@ CHEF AI helps you reduce food waste using artificial intelligence. It tracks you
 - **Frontend:** React, Vite, Tailwind CSS
 - **Backend:** Node.js, Express
 - **Database:** Supabase (PostgreSQL)
-- **AI:** Google Gemini 2.5 Flash
+- **AI:** Gemini 2.5 Flash
 - **Hosting:** Vercel
 
 ## 🚀 Quick Start
